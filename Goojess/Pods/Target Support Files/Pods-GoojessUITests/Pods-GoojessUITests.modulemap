@@ -1,0 +1,6 @@
+framework module Pods_GoojessUITests {
+  umbrella header "Pods-GoojessUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

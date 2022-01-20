@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CCLocationDetailReviews" customModule="Goojess" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CommentCell" rowHeight="70" id="1Ml-Jm-c1U" customClass="CCCommentsCell" customModule="Goojess" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Ml-Jm-c1U" id="ARe-8j-kg3">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="wa0-vu-Hgg">
+                        <rect key="frame" x="8" y="16" width="40" height="40"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="wa0-vu-Hgg" secondAttribute="height" multiplier="1:1" id="JKH-j9-gbF"/>
+                            <constraint firstAttribute="height" constant="40" id="r1L-G9-B7h"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="James Hopes" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="UMu-Uu-G4A">
+                        <rect key="frame" x="53" y="5" width="262" height="23"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.80000000000000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="l5D-nu-649">
+                        <rect key="frame" x="53" y="31" width="262" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="l5D-nu-649" secondAttribute="height" multiplier="131:17" id="jha-vR-qzG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wa0-vu-Hgg" firstAttribute="top" secondItem="ARe-8j-kg3" secondAttribute="topMargin" constant="8" id="4HI-bx-CPV"/>
+                    <constraint firstItem="UMu-Uu-G4A" firstAttribute="leading" secondItem="wa0-vu-Hgg" secondAttribute="trailing" constant="5" id="LsM-6W-GXu"/>
+                    <constraint firstItem="UMu-Uu-G4A" firstAttribute="top" secondItem="ARe-8j-kg3" secondAttribute="top" constant="5" id="MLH-I9-XWK"/>
+                    <constraint firstItem="UMu-Uu-G4A" firstAttribute="top" secondItem="wa0-vu-Hgg" secondAttribute="top" constant="-15" id="OgZ-Kc-aOf"/>
+                    <constraint firstAttribute="trailing" secondItem="l5D-nu-649" secondAttribute="trailing" constant="5" id="QhO-ES-Q7y"/>
+                    <constraint firstAttribute="trailing" secondItem="UMu-Uu-G4A" secondAttribute="trailing" constant="5" id="Rdi-Ai-RVZ"/>
+                    <constraint firstItem="UMu-Uu-G4A" firstAttribute="top" secondItem="ARe-8j-kg3" secondAttribute="top" constant="4" id="VJD-ZL-s7I"/>
+                    <constraint firstItem="wa0-vu-Hgg" firstAttribute="leading" secondItem="ARe-8j-kg3" secondAttribute="leadingMargin" id="Yk9-ZD-ojh"/>
+                    <constraint firstItem="l5D-nu-649" firstAttribute="leading" secondItem="wa0-vu-Hgg" secondAttribute="trailing" constant="5" id="gtz-RD-34T"/>
+                    <constraint firstItem="l5D-nu-649" firstAttribute="top" secondItem="UMu-Uu-G4A" secondAttribute="bottom" constant="3" id="mOQ-uM-KAB"/>
+                    <constraint firstItem="l5D-nu-649" firstAttribute="top" secondItem="UMu-Uu-G4A" secondAttribute="bottom" constant="4" id="vJT-jd-4zT"/>
+                    <constraint firstAttribute="bottom" secondItem="l5D-nu-649" secondAttribute="bottom" constant="2.5" id="yVs-7J-h5l"/>
+                    <constraint firstAttribute="bottom" secondItem="l5D-nu-649" secondAttribute="bottom" constant="4" id="zDb-eQ-4dp"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="OgZ-Kc-aOf"/>
+                        <exclude reference="VJD-ZL-s7I"/>
+                        <exclude reference="vJT-jd-4zT"/>
+                        <exclude reference="yVs-7J-h5l"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="imageViewCommentor" destination="wa0-vu-Hgg" id="exb-cu-euL"/>
+                <outlet property="labelCommentorName" destination="UMu-Uu-G4A" id="z6Q-o6-Lun"/>
+                <outlet property="labelCommentorText" destination="l5D-nu-649" id="WeP-YS-a1i"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="userPlaceholder" width="70" height="70"/>
+    </resources>
+</document>

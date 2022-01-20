@@ -1,0 +1,6 @@
+framework module Pods_Goojess {
+  umbrella header "Pods-Goojess-umbrella.h"
+
+  export *
+  module * { export * }
+}
